@@ -10,7 +10,7 @@
 
 
 
-  if(vat > 10) {
+  if(vat > 10)  {
       const vatPercent = (vat / 100) * price;
       const total = price + vatPercent;
        const vatResult = document.getElementById('result').textContent = "VAT Amount = $" + vatPercent;
