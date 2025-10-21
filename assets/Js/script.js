@@ -6,14 +6,15 @@
     event.preventDefault();
   let vat = parseFloat(document.getElementById('vat').value);
 
-  let salesAmount = parseFloat(document.getElementById('salesAmount').value);
+  let price = parseFloat(document.getElementById('price').value);
 
 
 
   if(vat > 10) {
-
-      const total = salesAmount + vat;
-       const saleResult = document.getElementById('result').textContent = "Sales Amount = $" + total;
+      const vatPercent = (vat / 100) * price;
+      const total = price + vatPercent;
+       const vatResult = document.getElementById('result').textContent = "VAT Amount = $" + vatPercent;
+       const productResult = document.getElementById('results').textContent = "Total = $" + total;
  } else {
 
       const saleResult = document.getElementById('result').textContent = "Vat is not up to 10";
