@@ -16,7 +16,7 @@
        const vatResult = document.getElementById('result').textContent = "VAT Amount = $" + vatPercent;
        const productResult = document.getElementById('results').textContent = "Total = $" + total;
  } else {
-      const vatResult = document.getElementById('result').textContent = "Could not calculate vat ";
+      const vatResult = document.getElementById('result').textContent = "Could not calculate Vat %";
   }
 
 });
