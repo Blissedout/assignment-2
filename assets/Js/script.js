@@ -3,7 +3,7 @@
   const calBtn = document.getElementById('calculate');
 
   calBtn.addEventListener('click', function() {
-    
+    event.preventDefault();
   let vat = parseFloat(document.getElementById('vat').value);
 
   let salesAmount = parseFloat(document.getElementById('salesAmount').value);
